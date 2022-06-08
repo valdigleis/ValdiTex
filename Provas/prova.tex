@@ -1,0 +1,66 @@
+\documentclass[12pt]{exam}
+
+% Básico de Idioma
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+
+% Matemática
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{centernot}
+
+% Cores
+\usepackage{color}
+\usepackage{xcolor}
+
+% Desenho
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\usetikzlibrary{positioning, calc, chains, fit, shapes, automata, trees}
+
+% Geometria do documento
+\usepackage[margin=1in]{geometry}
+
+% Multi colunas
+\usepackage{multicol}
+
+% Itens nas lista
+\usepackage[shortlabels]{enumitem}
+
+% Novos comandos
+\newcommand{\university}[1]{\textbf{#1}}
+\newcommand{\colleage}[1]{\textbf{#1}}
+\newcommand{\course}[2]{\textbf{#1} --- \textbf{#2}}
+\newcommand{\period}[2]{\textbf{Semestre: #1}.\textbf{#2}} 
+\newcommand{\teacher}[1]{\textbf{Professor: #1}}
+\newcommand{\examdate}[3]{\textit{#1/#2/#3}}
+%\newcommand{\timelimit}{}          
+
+
+% O documento
+\begin{document}
+	\pagestyle{plain}
+	\thispagestyle{empty}
+	\noindent
+	% Construção do cabeçálho
+	\begin{tabular*}{\textwidth}{ll}
+		\university{Universidade da Cidade de Arkhan}\\
+		\colleage{Departamento de Ciências}\\
+		\course{cth0100}{Introdução aos Mythos}\\
+		\period{1916}{1}\\
+		\teacher{H. P. Lovercraft}\\
+		\textbf{Atividade Avaliativa} --- \examdate{01}{06}{1916}\\
+	\end{tabular*}\\
+	% Passando a linha
+	\rule[0.1ex]{\textwidth}{1pt}
+	\begin{center}
+		Recomendações ({\color{red} leia com atenção})
+	\end{center}
+	\begin{itemize}
+		\item Primeira recomendação.
+	\end{itemize}
+\end{document}      
